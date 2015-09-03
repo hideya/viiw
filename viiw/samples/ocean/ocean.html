@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title></title>
+
+  <script src="viiw.js"></script>
+  
+  <script>
+
+    VIIW.setLayers( "container", 0,
+    [
+     { id: "sky",  zBias: 0,   scale: 1.20, hFactor: -0.20, hBias: 0, hRotFactor:   0, hRotBias: 0, vFactor:  -0.10, vBias: -0.11, vRotFactor:   0, vRotBias:  0 },
+     { id: "wave", zBias: 0.2, scale: 1.15, hFactor: -0.13, hBias: 0, hRotFactor: -20, hRotBias: 0, vFactor: -0.024, vBias:  0.54, vRotFactor: -40, vRotBias: 10 },
+    ]);
+
+    WIEW.postInit = function() {
+        var vid = document.getElementById( "wave" );
+        vid.playbackRate = 0.5;
+    }
+
+  </script>
+
+  <style>
+    body {
+      background-color: #FFF;
+      margin: 0px;
+      border: 0px;
+      padding: 0px;
+      outline: none;
+      user-select: none;
+    }
+    #container {
+      width: 100%;
+    }
+  </style>
+
+</head>
+
+<body onload="VIIW.init()">
+  <div id="container">
+    <img id="sky" src="ocean-sky.png"></img>
+    <video id="wave" src="ocean-wave.mp4" autoplay loop></video>
+  </div>
+</body>
+</html>

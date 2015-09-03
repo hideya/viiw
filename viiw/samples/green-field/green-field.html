@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title></title>
+
+  <script src="viiw.js"></script>
+  
+  <script>
+
+    VIIW.setLayers( "container", 1,
+    [
+     { id: "layer-0", zBias: 0.0, scale: 1.15, hFactor: -0.15, hBias: 0, hRotFactor: 0, hRotBias: 0, vFactor:  0.05, vBias: -0.10, vRotFactor:   0, vRotBias:   0 },
+     { id: "layer-1", zBias: 0.1, scale: 1.0,  hFactor: -0.10, hBias: 0, hRotFactor: 0, hRotBias: 0, vFactor:  0.02, vBias:  0.60, vRotFactor: -20, vRotBias:  10 },
+     { id: "layer-2", zBias: 0.2, scale: 0.9,  hFactor: -0.05, hBias: 0, hRotFactor: 3, hRotBias: 0, vFactor: -0.01, vBias:  0.51, vRotFactor: -10, vRotBias: -10 },
+    ]);
+
+  </script>
+
+  <style>
+    body {
+      background-color: #FFF;
+      margin: 0px;
+      border: 0px;
+      padding: 0px;
+      outline: none;
+      user-select: none;
+    }
+    #container {
+      width: 100%;
+    }
+  </style>
+
+</head>
+
+<body onload="VIIW.init()">
+  <div id="container">
+    <img id="layer-0" src="green-field-0.png"></img>
+    <img id="layer-1" src="green-field-1.png"></img>
+    <img id="layer-2" src="green-field-2.png"></img>
+  </div>
+
+</body>
+</html>
