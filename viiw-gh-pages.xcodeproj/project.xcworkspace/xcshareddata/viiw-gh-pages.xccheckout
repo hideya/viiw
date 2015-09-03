@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>54A8F0A6-B5BA-4FDE-A902-01784D8FD287</string>
+	<key>IDESourceControlProjectName</key>
+	<string>viiw-gh-pages</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3DBB7DAFB030C3135D2A4D2C60EDD1A793FDF804</key>
+		<string>https://github.com/hideya/viiw.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>viiw-gh-pages.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3DBB7DAFB030C3135D2A4D2C60EDD1A793FDF804</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/hideya/viiw.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3DBB7DAFB030C3135D2A4D2C60EDD1A793FDF804</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3DBB7DAFB030C3135D2A4D2C60EDD1A793FDF804</string>
+			<key>IDESourceControlWCCName</key>
+			<string>viiw-gh-pages</string>
+		</dict>
+	</array>
+</dict>
+</plist>
