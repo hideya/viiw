@@ -90,32 +90,31 @@ static NSString *const DefaultbackgroundKey = @"kBackgroundUrl";
     [self relaunch]; // FIXME
 }
 
-- (IBAction)switchToGreenField:(id)sender {
-    [self switchBackgroundTo:@"green-field"];
-}
-
-- (IBAction)switchToCrif:(id)sender {
-    [self switchBackgroundTo:@"criff"];
-}
-
-- (IBAction)switchToGinkgo:(id)sender {
-    [self switchBackgroundTo:@"ginkgo"];
-}
-
-- (IBAction)switchToTreesLining:(id)sender {
-    [self switchBackgroundTo:@"trees-lining"];
-}
-
-- (IBAction)switchToOcean:(id)sender {
-    [self switchBackgroundTo:@"ocean"];
-}
-
-- (IBAction)switchToIllumination:(id)sender {
-    [self switchBackgroundTo:@"illumination"];
-}
-
-- (IBAction)switchToWaves:(id)sender {
-    [self switchBackgroundTo:@"waves"];
+- (IBAction)switchBackground:(id)sender {
+    long tag = ((NSMenuItem*)sender).tag;
+    switch (tag) {
+        default:
+            [self switchBackgroundTo:@"samples/green-field/index"];
+            break;
+        case 1:
+            [self switchBackgroundTo:@"samples/criff/index"];
+            break;
+        case 2:
+            [self switchBackgroundTo:@"samples/ginkgo/index"];
+            break;
+        case 3:
+            [self switchBackgroundTo:@"samples/trees-lining/index"];
+            break;
+        case 4:
+            [self switchBackgroundTo:@"samples/ocean/index"];
+            break;
+        case 5:
+            [self switchBackgroundTo:@"samples/illumination/index"];
+            break;
+        case 6:
+            [self switchBackgroundTo:@"samples/waves/index"];
+            break;
+    }
 }
 
 - (IBAction)selectBackgroundFile:(id)sender {
@@ -155,6 +154,13 @@ static NSString *const DefaultbackgroundKey = @"kBackgroundUrl";
     [window setFrameOrigin : pos];
     [NSApp activateIgnoringOtherApps:YES];
     [window makeKeyAndOrderFront:self];
+}
+
+- (IBAction)showMoreInfo:(id)sender {
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://hideya.github.io/viiw/"]];
+    [self.infoPanel close];
+    [self.selectionInfoPanel close];
+
 }
 
 - (IBAction)quitButtonPressed:(id)sender {

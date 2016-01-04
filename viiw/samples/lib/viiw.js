@@ -17,8 +17,8 @@ VIIW.init = function() {
     this.layers[ i ].elem.style.position = "absolute";
   }
 
-  if ( VIIW.postInit ) {
-    VIIW.postInit();
+  if ( this.postInit ) {
+    this.postInit();
   }
 
   this.introScale = 2;
@@ -42,17 +42,17 @@ VIIW.onmousemove = function( event ) {
 }
 
 VIIW.update = function( mx, my ) {
-  VIIW.mx = mx;
-  VIIW.my = my;
+  this.mx = mx;
+  this.my = my;
 
-  if ( !VIIW.animRunning ) {
-    setTimeout( VIIW.performAnimation, 50 ); // 20 fps
-    VIIW.animRunning = true;
+  if ( !this.animRunning ) {
+    setTimeout( this.performAnimation, 50 ); // 20 fps
+    this.animRunning = true;
   }
 }
 
 VIIW.performAnimation = function() {
-  //  console.log( "+" );
+//  console.log( "+" );
 
   var amx = VIIW.amx = ( VIIW.amx * 0.95 + VIIW.mx * 0.05 );
   var amy = VIIW.amy = ( VIIW.amy * 0.95 + VIIW.my * 0.05 );

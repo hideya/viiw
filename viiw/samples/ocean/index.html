@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <title></title>
 
-  <script src="viiw.js"></script>
+  <script src="../lib/viiw.js"></script>
   
   <script>
 
@@ -15,7 +15,7 @@
      { id: "wave", zBias: 0.2, scale: 1.15, hFactor: -0.13, hBias: 0, hRotFactor: -20, hRotBias: 0, vFactor: -0.024, vBias:  0.54, vRotFactor: -40, vRotBias: 10 },
     ]);
 
-    WIEW.postInit = function() {
+    VIIW.postInit = function() {
         var vid = document.getElementById( "wave" );
         vid.playbackRate = 0.5;
     }

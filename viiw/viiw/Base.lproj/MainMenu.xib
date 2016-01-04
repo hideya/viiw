@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
         <plugIn identifier="com.apple.WebKitIBPlugin" version="7706"/>
     </dependencies>
@@ -27,14 +28,14 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <window title="viiw" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hasShadow="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="QvC-M9-y7g" customClass="VWBackgroundWindow">
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="143" height="4"/>
+            <rect key="contentRect" x="335" y="390" width="147" height="2"/>
             <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1577"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="1" width="143" height="4"/>
+                <rect key="frame" x="0.0" y="1" width="147" height="2"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <webView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kVW-aN-zvB">
-                        <rect key="frame" x="0.0" y="-143" width="229" height="147"/>
+                    <webView translatesAutoresizingMaskIntoConstraints="NO" id="kVW-aN-zvB">
+                        <rect key="frame" x="0.0" y="-147" width="233" height="149"/>
                         <webPreferences key="preferences" defaultFontSize="16" defaultFixedFontSize="16" minimumFontSize="9" javaScriptCanOpenWindowsAutomatically="NO">
                             <nil key="identifier"/>
                         </webPreferences>
@@ -47,53 +48,53 @@
                     <constraint firstAttribute="trailing" secondItem="kVW-aN-zvB" secondAttribute="trailing" constant="-86" id="sbB-Re-a0r"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="-470.5" y="-170"/>
+            <point key="canvasLocation" x="-468.5" y="-166"/>
         </window>
         <menu id="NEz-1h-Ge6">
             <items>
-                <menuItem title="SELECTIONS" enabled="NO" id="Qbt-n6-m5J">
+                <menuItem title="Preinstalled" enabled="NO" id="Qbt-n6-m5J">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
-                <menuItem title="green field" id="qnH-d8-v85">
+                <menuItem title="green field" indentationLevel="1" id="qnH-d8-v85">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="switchToGreenField:" target="Voe-Tx-rLC" id="tB1-TX-I1E"/>
+                        <action selector="switchBackground:" target="Voe-Tx-rLC" id="edO-TT-hjA"/>
                     </connections>
                 </menuItem>
-                <menuItem title="criff view" id="sp4-xP-Zti">
+                <menuItem title="criff view" tag="1" indentationLevel="1" id="sp4-xP-Zti">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="switchToCrif:" target="Voe-Tx-rLC" id="OkB-i0-mpQ"/>
+                        <action selector="switchBackground:" target="Voe-Tx-rLC" id="yZF-b5-d6f"/>
                     </connections>
                 </menuItem>
-                <menuItem title="colored ginkgo" id="OOq-H0-SnR">
+                <menuItem title="colored ginkgo" tag="2" indentationLevel="1" id="OOq-H0-SnR">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="switchToGinkgo:" target="Voe-Tx-rLC" id="Jg6-me-VfM"/>
+                        <action selector="switchBackground:" target="Voe-Tx-rLC" id="jVf-4j-Oh6"/>
                     </connections>
                 </menuItem>
-                <menuItem title="trees lining" id="3s5-lp-IU9">
+                <menuItem title="trees lining" tag="3" indentationLevel="1" id="3s5-lp-IU9">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="switchToTreesLining:" target="Voe-Tx-rLC" id="YQn-70-Acq"/>
+                        <action selector="switchBackground:" target="Voe-Tx-rLC" id="15k-4g-9Jx"/>
                     </connections>
                 </menuItem>
-                <menuItem title="calm ocean" id="3qT-YY-GWn">
+                <menuItem title="calm ocean" tag="4" indentationLevel="1" id="3qT-YY-GWn">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="switchToOcean:" target="Voe-Tx-rLC" id="G7u-v1-mL6"/>
+                        <action selector="switchBackground:" target="Voe-Tx-rLC" id="NOJ-tL-s1o"/>
                     </connections>
                 </menuItem>
-                <menuItem title="illumination" id="sxd-et-BaE">
+                <menuItem title="illumination" tag="5" indentationLevel="1" id="sxd-et-BaE">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="switchToIllumination:" target="Voe-Tx-rLC" id="boP-nr-xqv"/>
+                        <action selector="switchBackground:" target="Voe-Tx-rLC" id="OhB-MN-4jc"/>
                     </connections>
                 </menuItem>
-                <menuItem title="waves" id="pO5-dP-edA">
+                <menuItem title="waves" tag="6" indentationLevel="1" id="pO5-dP-edA">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="switchToWaves:" target="Voe-Tx-rLC" id="u1D-eG-jgy"/>
+                        <action selector="switchBackground:" target="Voe-Tx-rLC" id="c2q-T0-gdw"/>
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="q2R-px-kz7"/>
@@ -121,71 +122,81 @@
             <point key="canvasLocation" x="-268.5" y="-40.5"/>
         </menu>
         <window title="viiw" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="fBs-Fs-Bef" customClass="NSPanel">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" unifiedTitleAndToolbar="YES"/>
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="272" y="199" width="250" height="270"/>
+            <rect key="contentRect" x="272" y="199" width="250" height="200"/>
             <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1577"/>
             <view key="contentView" id="niy-jb-jt3">
-                <rect key="frame" x="0.0" y="-1" width="250" height="270"/>
+                <rect key="frame" x="0.0" y="0.0" width="250" height="200"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xrp-HI-zc2">
-                        <rect key="frame" x="90" y="199" width="70" height="55"/>
+                        <rect key="frame" x="90" y="129" width="70" height="55"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="S22-0l-INF"/>
                     </imageView>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HKu-4H-XSm">
-                        <rect key="frame" x="20" y="-17" width="210" height="136"/>
-                        <textFieldCell key="cell" selectable="YES" refusesFirstResponder="YES" allowsUndo="NO" state="on" alignment="center" id="qEM-Xv-NLz">
-                            <font key="font" metaFont="system" size="10"/>
-                            <string key="title">Acknowledgements
-
-The original image for "green field" is by Luxt Design.  
-The original image for "criff view" is by Christopher Combe Photography. 
-
- Thank you!</string>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CZu-oq-g47">
-                        <rect key="frame" x="12" y="119" width="226" height="67"/>
-                        <textFieldCell key="cell" selectable="YES" refusesFirstResponder="YES" allowsUndo="NO" state="on" alignment="center" title="Dynamic desktop enabler based on HTML5!  For more info, please visit http://hideya.github.io/viiw" id="JhD-rQ-NEG">
+                        <rect key="frame" x="24" y="44" width="203" height="72"/>
+                        <textFieldCell key="cell" refusesFirstResponder="YES" allowsUndo="NO" state="on" alignment="center" id="JhD-rQ-NEG">
                             <font key="font" metaFont="system"/>
+                            <string key="title">Dynamic desktop enabler
+based on HTML5!
+For more info,
+please visit</string>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZhL-kk-hNG">
+                        <rect key="frame" x="37" y="19" width="176" height="17"/>
+                        <buttonCell key="cell" type="inline" title=" http://hideya.github.io/viiw" bezelStyle="inline" alignment="center" borderStyle="border" inset="2" id="Vfe-hN-EeG">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystemBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="showMoreInfo:" target="Voe-Tx-rLC" id="EzD-xC-eQs"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="-219" y="292"/>
+            <point key="canvasLocation" x="-219" y="249"/>
         </window>
         <window title="viiw" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="yFN-YP-fOB" customClass="NSPanel">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" unifiedTitleAndToolbar="YES"/>
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="272" y="199" width="250" height="230"/>
+            <rect key="contentRect" x="272" y="199" width="250" height="200"/>
             <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1577"/>
             <view key="contentView" id="DjT-yp-RGJ">
-                <rect key="frame" x="0.0" y="0.0" width="250" height="230"/>
+                <rect key="frame" x="0.0" y="0.0" width="250" height="200"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z2r-J1-BYA">
-                        <rect key="frame" x="90" y="159" width="70" height="55"/>
+                        <rect key="frame" x="90" y="129" width="70" height="55"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="w5Y-Ph-T9c"/>
                     </imageView>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YE1-JN-Cdc">
-                        <rect key="frame" x="15" y="28" width="220" height="119"/>
-                        <textFieldCell key="cell" selectable="YES" refusesFirstResponder="YES" allowsUndo="NO" state="on" alignment="center" id="yhk-Gq-Zb9">
+                        <rect key="frame" x="15" y="25" width="220" height="93"/>
+                        <textFieldCell key="cell" refusesFirstResponder="YES" allowsUndo="NO" state="on" alignment="center" id="yhk-Gq-Zb9">
                             <font key="font" metaFont="system"/>
                             <string key="title">Because of the restrictions against AppStore-enabled apps, arbitrary background files cannot be read by this version.  Please check out a generic version at:
 
- http://hideya.github.io/viiw</string>
+</string>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o9V-mo-OYJ">
+                        <rect key="frame" x="37" y="10" width="176" height="17"/>
+                        <buttonCell key="cell" type="inline" title=" http://hideya.github.io/viiw" bezelStyle="inline" alignment="center" borderStyle="border" inset="2" id="PQ5-nP-bYI">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystemBold"/>
+                            <connections>
+                                <action selector="showMoreInfo:" target="Voe-Tx-rLC" id="H61-7S-Hxc"/>
+                            </connections>
+                        </buttonCell>
+                    </button>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="-219" y="636"/>
+            <point key="canvasLocation" x="-219" y="528"/>
         </window>
     </objects>
 </document>
