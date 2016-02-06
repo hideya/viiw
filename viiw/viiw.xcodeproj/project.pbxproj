@@ -7,16 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8929353B1B8A3367001DFD1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8929353A1B8A3367001DFD1D /* AppDelegate.m */; };
-		8929353D1B8A3367001DFD1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8929353C1B8A3367001DFD1D /* main.m */; };
 		8929353F1B8A3367001DFD1D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8929353E1B8A3367001DFD1D /* Images.xcassets */; };
 		892935421B8A3367001DFD1D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 892935401B8A3367001DFD1D /* MainMenu.xib */; };
-		8929354E1B8A3367001DFD1D /* viiwTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8929354D1B8A3367001DFD1D /* viiwTests.m */; };
 		892935581B8A3705001DFD1D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 892935571B8A3705001DFD1D /* Cocoa.framework */; };
 		8929355A1B8A370E001DFD1D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 892935591B8A370E001DFD1D /* WebKit.framework */; };
-		8929355D1B8A3B23001DFD1D /* VWBackgroundWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8929355C1B8A3B23001DFD1D /* VWBackgroundWindow.m */; };
 		8929355F1B8A3C83001DFD1D /* bridge.js in Resources */ = {isa = PBXBuildFile; fileRef = 8929355E1B8A3C83001DFD1D /* bridge.js */; };
+		893A53451C65963700E378E6 /* BackgroundWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893A53441C65963700E378E6 /* BackgroundWindow.swift */; };
+		893A53601C65A08900E378E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893A535F1C65A08900E378E6 /* AppDelegate.swift */; };
 		8987B8971BC6FC4D00452F26 /* samples in Resources */ = {isa = PBXBuildFile; fileRef = 8987B8961BC6FC4D00452F26 /* samples */; };
+		899FEBC01C65C63000075273 /* viiwTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899FEBBF1C65C63000075273 /* viiwTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,20 +31,17 @@
 /* Begin PBXFileReference section */
 		892935341B8A3367001DFD1D /* viiw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viiw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		892935381B8A3367001DFD1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		892935391B8A3367001DFD1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8929353A1B8A3367001DFD1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8929353C1B8A3367001DFD1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8929353E1B8A3367001DFD1D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		892935411B8A3367001DFD1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		892935471B8A3367001DFD1D /* viiwTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = viiwTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8929354C1B8A3367001DFD1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8929354D1B8A3367001DFD1D /* viiwTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = viiwTests.m; sourceTree = "<group>"; };
 		892935571B8A3705001DFD1D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		892935591B8A370E001DFD1D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		8929355B1B8A3B23001DFD1D /* VWBackgroundWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWBackgroundWindow.h; sourceTree = "<group>"; };
-		8929355C1B8A3B23001DFD1D /* VWBackgroundWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWBackgroundWindow.m; sourceTree = "<group>"; };
 		8929355E1B8A3C83001DFD1D /* bridge.js */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.javascript; path = bridge.js; sourceTree = "<group>"; tabWidth = 2; };
+		893A53441C65963700E378E6 /* BackgroundWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundWindow.swift; sourceTree = "<group>"; };
+		893A535F1C65A08900E378E6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8987B8961BC6FC4D00452F26 /* samples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = samples; sourceTree = "<group>"; };
+		899FEBBF1C65C63000075273 /* viiwTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viiwTests.swift; sourceTree = "<group>"; };
 		89F252C61B94DE5100648B8B /* viiw.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = viiw.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,31 +89,20 @@
 			isa = PBXGroup;
 			children = (
 				89F252C61B94DE5100648B8B /* viiw.entitlements */,
-				892935391B8A3367001DFD1D /* AppDelegate.h */,
-				8929353A1B8A3367001DFD1D /* AppDelegate.m */,
-				8929355B1B8A3B23001DFD1D /* VWBackgroundWindow.h */,
-				8929355C1B8A3B23001DFD1D /* VWBackgroundWindow.m */,
+				893A535F1C65A08900E378E6 /* AppDelegate.swift */,
+				893A53441C65963700E378E6 /* BackgroundWindow.swift */,
+				8929355E1B8A3C83001DFD1D /* bridge.js */,
 				8929353E1B8A3367001DFD1D /* Images.xcassets */,
 				892935401B8A3367001DFD1D /* MainMenu.xib */,
-				8929355E1B8A3C83001DFD1D /* bridge.js */,
-				892935371B8A3367001DFD1D /* Supporting Files */,
+				899FEBC11C65C6D900075273 /* Supporting Files */,
 			);
 			path = viiw;
-			sourceTree = "<group>";
-		};
-		892935371B8A3367001DFD1D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				892935381B8A3367001DFD1D /* Info.plist */,
-				8929353C1B8A3367001DFD1D /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		8929354A1B8A3367001DFD1D /* viiwTests */ = {
 			isa = PBXGroup;
 			children = (
-				8929354D1B8A3367001DFD1D /* viiwTests.m */,
+				899FEBBF1C65C63000075273 /* viiwTests.swift */,
 				8929354B1B8A3367001DFD1D /* Supporting Files */,
 			);
 			path = viiwTests;
@@ -127,6 +112,14 @@
 			isa = PBXGroup;
 			children = (
 				8929354C1B8A3367001DFD1D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		899FEBC11C65C6D900075273 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				892935381B8A3367001DFD1D /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -185,6 +178,7 @@
 		8929352C1B8A3367001DFD1D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "hideya kawahara";
 				TargetAttributes = {
@@ -251,9 +245,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8929355D1B8A3B23001DFD1D /* VWBackgroundWindow.m in Sources */,
-				8929353D1B8A3367001DFD1D /* main.m in Sources */,
-				8929353B1B8A3367001DFD1D /* AppDelegate.m in Sources */,
+				893A53601C65A08900E378E6 /* AppDelegate.swift in Sources */,
+				893A53451C65963700E378E6 /* BackgroundWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8929354E1B8A3367001DFD1D /* viiwTests.m in Sources */,
+				899FEBC01C65C63000075273 /* viiwTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +316,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -360,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -370,12 +363,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = viiw/viiw.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = viiw/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = viiw;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -383,12 +379,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = viiw/viiw.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = viiw/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = viiw;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
@@ -396,6 +394,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -408,6 +407,7 @@
 				INFOPLIST_FILE = viiwTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = viiwTests;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/viiw.app/Contents/MacOS/viiw";
 			};
 			name = Debug;
@@ -416,6 +416,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
