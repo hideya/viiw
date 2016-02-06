@@ -41,9 +41,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         imageViewInfoPanel.image = NSImage.init(named: "AppIcon")
         imageViewSelectionInfoPanel.image = NSImage.init(named: "AppIcon")
 
-        let backgroundUrlString = userDefaults.stringForKey(defaultBackgroundKey) ?? getUrlFor(backgroundFilenames[0])
-//        let backgroundUrlString = getUrlFor(backgroundFilenames[0])
-        userDefaults.setObject(backgroundUrlString, forKey: backgroundUrlString)
+        let backgroundUrlString = userDefaults.stringForKey(defaultBackgroundKey) ?? getUrlStringFor(backgroundFilenames[0])
+//        let backgroundUrlString = getUrlStringFor(backgroundFilenames[0])
+        userDefaults.setObject(backgroundUrlString, forKey: defaultBackgroundKey)
         let backgroundUrl = NSURL.init(string: backgroundUrlString)
         if let backgroundUrl = backgroundUrl {
             setupBackground(backgroundUrl)
@@ -72,14 +72,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         webView.windowScriptObject.evaluateWebScript(jscontents! as String)
     }
 
-    private func getUrlFor(nameStem: String) -> String {
+    private func getUrlStringFor(nameStem: String) -> String {
         let filepath = NSBundle.mainBundle().pathForResource(nameStem, ofType: "html")!
         let url = "file://\(filepath)"
         return url
     }
 
     private func switchBackgroundTo(nameStem: String) {
-        let urlStr = getUrlFor(nameStem)
+        let urlStr = getUrlStringFor(nameStem)
         userDefaults.setObject(urlStr, forKey: defaultBackgroundKey)
         print("opening: \(urlStr)")
 //        let backgroundUrl = NSURL.init(string: urlStr)
