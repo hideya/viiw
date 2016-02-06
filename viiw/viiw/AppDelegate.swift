@@ -26,8 +26,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         "samples/criff/index",
         "samples/ginkgo/index",
         "samples/trees-lining/index",
-        "samples/ocean/index",
-        "samples/illumination/index",
         "samples/waves/index",
     ]
     private let projectWebSiteUrl = "http://hideya.github.io/viiw/"

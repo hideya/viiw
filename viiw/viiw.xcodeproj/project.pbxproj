@@ -38,6 +38,7 @@
 		893A535F1C65A08900E378E6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8987B8961BC6FC4D00452F26 /* samples */ = {isa = PBXFileReference; lastKnownFileType = folder; name = samples; path = ../samples; sourceTree = "<group>"; };
 		899FEBBF1C65C63000075273 /* viiwTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viiwTests.swift; sourceTree = "<group>"; };
+		899FEBC41C66277F00075273 /* samples-backup */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "samples-backup"; sourceTree = SOURCE_ROOT; };
 		89F252C61B94DE5100648B8B /* viiw.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = viiw.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +86,7 @@
 				893A53441C65963700E378E6 /* BackgroundWindow.swift */,
 				8929355E1B8A3C83001DFD1D /* bridge.js */,
 				8987B8961BC6FC4D00452F26 /* samples */,
+				899FEBC41C66277F00075273 /* samples-backup */,
 				8929353E1B8A3367001DFD1D /* Images.xcassets */,
 				892935401B8A3367001DFD1D /* MainMenu.xib */,
 				899FEBC11C65C6D900075273 /* Supporting Files */,
