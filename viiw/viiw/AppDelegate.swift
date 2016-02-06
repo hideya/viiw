@@ -44,8 +44,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let backgroundUrlString = userDefaults.stringForKey(defaultBackgroundKey) ?? getUrlFor(backgroundFilenames[0])
 //        let backgroundUrlString = getUrlFor(backgroundFilenames[0])
         userDefaults.setObject(backgroundUrlString, forKey: backgroundUrlString)
-        let backgroundUrl = NSURL.init(string: backgroundUrlString)!
-        setupBackground(backgroundUrl)
+        let backgroundUrl = NSURL.init(string: backgroundUrlString)
+        if let backgroundUrl = backgroundUrl {
+            setupBackground(backgroundUrl)
+        }
 
         NSEvent.addGlobalMonitorForEventsMatchingMask([.MouseMovedMask, .LeftMouseDraggedMask, .RightMouseDraggedMask]) {event in
             let point = event.locationInWindow
