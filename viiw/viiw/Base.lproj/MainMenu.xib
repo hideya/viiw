@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
-        <plugIn identifier="com.apple.WebKitIBPlugin" version="7706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
+        <plugIn identifier="com.apple.WebKitIBPlugin" version="9531"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -13,43 +13,18 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="viiw">
             <connections>
-                <outlet property="imageViewInfoPanel" destination="Xrp-HI-zc2" id="wxS-Jg-Ifr"/>
-                <outlet property="imageViewSelectionInfoPanel" destination="Z2r-J1-BYA" id="j6R-S8-50M"/>
-                <outlet property="infoPanel" destination="fBs-Fs-Bef" id="owT-WO-yCY"/>
-                <outlet property="selectionInfoPanel" destination="yFN-YP-fOB" id="84u-Dd-zNe"/>
-                <outlet property="statusMenu" destination="NEz-1h-Ge6" id="0k6-Ok-zkc"/>
-                <outlet property="statusMenuFirstItem" destination="Qbt-n6-m5J" id="9fD-Xo-78v"/>
-                <outlet property="webView" destination="kVW-aN-zvB" id="UhB-y7-Ccw"/>
+                <outlet property="imageViewInfoPanel" destination="Xrp-HI-zc2" id="omM-GR-E3b"/>
+                <outlet property="imageViewSelectionInfoPanel" destination="Z2r-J1-BYA" id="BHZ-ai-MwB"/>
+                <outlet property="infoPanel" destination="fBs-Fs-Bef" id="e9X-Ue-bnS"/>
+                <outlet property="selectionInfoPanel" destination="yFN-YP-fOB" id="t5Y-pO-2J4"/>
+                <outlet property="statusMenu" destination="NEz-1h-Ge6" id="UUp-9j-jFN"/>
+                <outlet property="webView" destination="kVW-aN-zvB" id="GOz-vp-wcE"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
-        <window title="viiw" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hasShadow="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="QvC-M9-y7g" customClass="VWBackgroundWindow">
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="147" height="2"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1577"/>
-            <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="1" width="147" height="2"/>
-                <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <webView translatesAutoresizingMaskIntoConstraints="NO" id="kVW-aN-zvB">
-                        <rect key="frame" x="0.0" y="-147" width="233" height="149"/>
-                        <webPreferences key="preferences" defaultFontSize="16" defaultFixedFontSize="16" minimumFontSize="9" javaScriptCanOpenWindowsAutomatically="NO">
-                            <nil key="identifier"/>
-                        </webPreferences>
-                    </webView>
-                </subviews>
-                <constraints>
-                    <constraint firstItem="kVW-aN-zvB" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="6n4-Yi-vF8"/>
-                    <constraint firstItem="kVW-aN-zvB" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="cK8-RR-o9r"/>
-                    <constraint firstAttribute="bottom" secondItem="kVW-aN-zvB" secondAttribute="bottom" constant="-147" id="s0G-ud-kqS"/>
-                    <constraint firstAttribute="trailing" secondItem="kVW-aN-zvB" secondAttribute="trailing" constant="-86" id="sbB-Re-a0r"/>
-                </constraints>
-            </view>
-            <point key="canvasLocation" x="-468.5" y="-166"/>
-        </window>
         <menu id="NEz-1h-Ge6">
             <items>
                 <menuItem title="Preinstalled" enabled="NO" id="Qbt-n6-m5J">
@@ -58,69 +33,93 @@
                 <menuItem title="green field" indentationLevel="1" id="qnH-d8-v85">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="switchBackground:" target="Voe-Tx-rLC" id="edO-TT-hjA"/>
+                        <action selector="switchBackground:" target="Voe-Tx-rLC" id="38A-Nf-yoF"/>
                     </connections>
                 </menuItem>
                 <menuItem title="criff view" tag="1" indentationLevel="1" id="sp4-xP-Zti">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="switchBackground:" target="Voe-Tx-rLC" id="yZF-b5-d6f"/>
+                        <action selector="switchBackground:" target="Voe-Tx-rLC" id="Tpq-7T-J1E"/>
                     </connections>
                 </menuItem>
                 <menuItem title="colored ginkgo" tag="2" indentationLevel="1" id="OOq-H0-SnR">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="switchBackground:" target="Voe-Tx-rLC" id="jVf-4j-Oh6"/>
+                        <action selector="switchBackground:" target="Voe-Tx-rLC" id="BqG-Q1-qWo"/>
                     </connections>
                 </menuItem>
                 <menuItem title="trees lining" tag="3" indentationLevel="1" id="3s5-lp-IU9">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="switchBackground:" target="Voe-Tx-rLC" id="15k-4g-9Jx"/>
+                        <action selector="switchBackground:" target="Voe-Tx-rLC" id="IQs-rO-KYT"/>
                     </connections>
                 </menuItem>
                 <menuItem title="calm ocean" tag="4" indentationLevel="1" id="3qT-YY-GWn">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="switchBackground:" target="Voe-Tx-rLC" id="NOJ-tL-s1o"/>
+                        <action selector="switchBackground:" target="Voe-Tx-rLC" id="XsC-ZK-gcg"/>
                     </connections>
                 </menuItem>
                 <menuItem title="illumination" tag="5" indentationLevel="1" id="sxd-et-BaE">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="switchBackground:" target="Voe-Tx-rLC" id="OhB-MN-4jc"/>
+                        <action selector="switchBackground:" target="Voe-Tx-rLC" id="CJT-iK-Z6s"/>
                     </connections>
                 </menuItem>
                 <menuItem title="waves" tag="6" indentationLevel="1" id="pO5-dP-edA">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="switchBackground:" target="Voe-Tx-rLC" id="c2q-T0-gdw"/>
+                        <action selector="switchBackground:" target="Voe-Tx-rLC" id="PJa-Mx-9ac"/>
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="q2R-px-kz7"/>
                 <menuItem title="Select..." id="ekj-F9-YBs">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="selectBackgroundFile:" target="Voe-Tx-rLC" id="PR5-84-7Y9"/>
+                        <action selector="selectBackgroundFile:" target="Voe-Tx-rLC" id="gJk-vW-5LM"/>
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="hLe-0T-M6D"/>
                 <menuItem title="About..." id="dGn-05-PDJ">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="showInfoPanel:" target="Voe-Tx-rLC" id="PRB-0Q-ZwV"/>
+                        <action selector="showInfoPanel:" target="Voe-Tx-rLC" id="gj1-T6-AZQ"/>
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="I7M-nI-VJQ"/>
                 <menuItem title="Quit" id="Eqc-D6-N1H">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="quitButtonPressed:" target="Voe-Tx-rLC" id="hjf-Ha-Ria"/>
+                        <action selector="quitButtonPressed:" target="Voe-Tx-rLC" id="2Il-rf-38b"/>
                     </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="-268.5" y="-40.5"/>
+            <point key="canvasLocation" x="-270" y="-40.5"/>
         </menu>
+        <window title="viiw" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hasShadow="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="QvC-M9-y7g" customClass="BackgroundWindow" customModule="viiw" customModuleProvider="target">
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="335" y="390" width="147" height="82"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1577"/>
+            <view key="contentView" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="147" height="82"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <webView translatesAutoresizingMaskIntoConstraints="NO" id="kVW-aN-zvB">
+                        <rect key="frame" x="0.0" y="0.0" width="147" height="82"/>
+                        <webPreferences key="preferences" defaultFontSize="16" defaultFixedFontSize="16" minimumFontSize="9" javaScriptCanOpenWindowsAutomatically="NO">
+                            <nil key="identifier"/>
+                        </webPreferences>
+                    </webView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="kVW-aN-zvB" secondAttribute="trailing" id="LXo-uE-VHa"/>
+                    <constraint firstAttribute="bottom" secondItem="kVW-aN-zvB" secondAttribute="bottom" id="Ljp-Gn-L7f"/>
+                    <constraint firstItem="kVW-aN-zvB" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="wv6-Dm-lzS"/>
+                    <constraint firstItem="kVW-aN-zvB" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="xeY-6A-L2k"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="-468.5" y="-126"/>
+        </window>
         <window title="viiw" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="fBs-Fs-Bef" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -153,7 +152,7 @@ please visit</string>
                             <font key="font" metaFont="smallSystemBold"/>
                         </buttonCell>
                         <connections>
-                            <action selector="showMoreInfo:" target="Voe-Tx-rLC" id="EzD-xC-eQs"/>
+                            <action selector="showMoreInfo:" target="Voe-Tx-rLC" id="KlK-EI-co7"/>
                         </connections>
                     </button>
                 </subviews>
@@ -169,7 +168,7 @@ please visit</string>
                 <rect key="frame" x="0.0" y="0.0" width="250" height="200"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z2r-J1-BYA">
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z2r-J1-BYA" userLabel="image view">
                         <rect key="frame" x="90" y="129" width="70" height="55"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="w5Y-Ph-T9c"/>
                     </imageView>
@@ -189,10 +188,10 @@ please visit</string>
                         <buttonCell key="cell" type="inline" title=" http://hideya.github.io/viiw" bezelStyle="inline" alignment="center" borderStyle="border" inset="2" id="PQ5-nP-bYI">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="smallSystemBold"/>
-                            <connections>
-                                <action selector="showMoreInfo:" target="Voe-Tx-rLC" id="H61-7S-Hxc"/>
-                            </connections>
                         </buttonCell>
+                        <connections>
+                            <action selector="showMoreInfo:" target="Voe-Tx-rLC" id="21J-wZ-NFt"/>
+                        </connections>
                     </button>
                 </subviews>
             </view>
