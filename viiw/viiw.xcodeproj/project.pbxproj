@@ -36,7 +36,7 @@
 		8929355E1B8A3C83001DFD1D /* bridge.js */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.javascript; path = bridge.js; sourceTree = "<group>"; tabWidth = 2; };
 		893A53441C65963700E378E6 /* BackgroundWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundWindow.swift; sourceTree = "<group>"; };
 		893A535F1C65A08900E378E6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8987B8961BC6FC4D00452F26 /* samples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = samples; sourceTree = "<group>"; };
+		8987B8961BC6FC4D00452F26 /* samples */ = {isa = PBXFileReference; lastKnownFileType = folder; name = samples; path = ../samples; sourceTree = "<group>"; };
 		899FEBBF1C65C63000075273 /* viiwTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viiwTests.swift; sourceTree = "<group>"; };
 		89F252C61B94DE5100648B8B /* viiw.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = viiw.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				892935361B8A3367001DFD1D /* viiw */,
-				8987B8961BC6FC4D00452F26 /* samples */,
 				8929354A1B8A3367001DFD1D /* viiwTests */,
 				892935351B8A3367001DFD1D /* Products */,
 			);
@@ -85,6 +84,7 @@
 				893A535F1C65A08900E378E6 /* AppDelegate.swift */,
 				893A53441C65963700E378E6 /* BackgroundWindow.swift */,
 				8929355E1B8A3C83001DFD1D /* bridge.js */,
+				8987B8961BC6FC4D00452F26 /* samples */,
 				8929353E1B8A3367001DFD1D /* Images.xcassets */,
 				892935401B8A3367001DFD1D /* MainMenu.xib */,
 				899FEBC11C65C6D900075273 /* Supporting Files */,
