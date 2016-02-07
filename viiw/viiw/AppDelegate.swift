@@ -23,9 +23,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     private let defaultBackgroundKey = "kBackgroundUrl"
     private let backgroundFilenames = [
         "samples/green-field/index",
-        "samples/criff/index",
-        "samples/ginkgo/index",
-        "samples/trees-lining/index",
+        "samples/cliff-view/index",
+        "samples/poppy-flowers/index",
+        "samples/winter-trees/index",
+        "samples/sunny-beach/index",
         "samples/waves/index",
     ]
     private let projectWebSiteUrl = "http://hideya.github.io/viiw/"
@@ -40,10 +41,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem.menu = statusMenu
         imageViewInfoPanel.image = NSImage.init(named: "AppIcon")
         imageViewSelectionInfoPanel.image = NSImage.init(named: "AppIcon")
-
-        if userDefaults.stringForKey(defaultBackgroundKey) == nil {
-            userDefaults.setObject(getUrlStringFor(backgroundFilenames[0]), forKey: defaultBackgroundKey)
-        }
 
         setupBackground()
         
@@ -61,7 +58,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     private func setupBackground() {
-        let urlString = userDefaults.stringForKey(defaultBackgroundKey)!
+//        let urlString = getUrlStringFor(backgroundFilenames[0])
+        let urlString = userDefaults.stringForKey(defaultBackgroundKey) ?? getUrlStringFor(backgroundFilenames[0])
         print("opening: \(urlString)")
         let urlOp = NSURL.init(string: urlString)
         guard let url = urlOp else {
