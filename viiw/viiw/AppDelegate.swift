@@ -41,14 +41,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         imageViewInfoPanel.image = NSImage.init(named: "AppIcon")
         imageViewSelectionInfoPanel.image = NSImage.init(named: "AppIcon")
 
-        let backgroundUrlString = userDefaults.stringForKey(defaultBackgroundKey) ?? getUrlStringFor(backgroundFilenames[0])
-//        let backgroundUrlString = getUrlStringFor(backgroundFilenames[0])
-        userDefaults.setObject(backgroundUrlString, forKey: defaultBackgroundKey)
-        let backgroundUrl = NSURL.init(string: backgroundUrlString)
-        if let backgroundUrl = backgroundUrl {
-            setupBackground(backgroundUrl)
+        if userDefaults.stringForKey(defaultBackgroundKey) == nil {
+            userDefaults.setObject(getUrlStringFor(backgroundFilenames[0]), forKey: defaultBackgroundKey)
         }
 
+        setupBackground()
+        
         NSEvent.addGlobalMonitorForEventsMatchingMask([.MouseMovedMask, .LeftMouseDraggedMask, .RightMouseDraggedMask]) {event in
             let point = event.locationInWindow
             let mx = point.x
@@ -62,8 +60,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
 
-    private func setupBackground(url: NSURL) {
-        print("opening: \(url)")
+    private func setupBackground() {
+        let urlString = userDefaults.stringForKey(defaultBackgroundKey)!
+        print("opening: \(urlString)")
+        let urlOp = NSURL.init(string: urlString)
+        guard let url = urlOp else {
+            return
+        }
+
+        webView.shouldUpdateWhileOffscreen = false
         let urlRequest = NSURLRequest.init(URL: url)
         webView.mainFrame.loadRequest(urlRequest)
 
@@ -78,15 +83,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         return url
     }
 
-    private func switchBackgroundTo(nameStem: String) {
-        let urlStr = getUrlStringFor(nameStem)
-        userDefaults.setObject(urlStr, forKey: defaultBackgroundKey)
-        print("opening: \(urlStr)")
-//        let backgroundUrl = NSURL.init(string: urlStr)
-//        setupBackground(backgroundUrl!)
-        relaunch() // FIXME
-    }
-
     private func relaunch() {
         let task = NSTask()
         task.launchPath = "/bin/sh"
@@ -97,7 +93,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @IBAction func switchBackground(sender: AnyObject) {
         let tag = (sender as? NSMenuItem)?.tag
-        switchBackgroundTo(backgroundFilenames[tag!])
+        let urlStr = getUrlStringFor(backgroundFilenames[tag!])
+        userDefaults.setObject(urlStr, forKey: defaultBackgroundKey)
+//        setupBackground()
+        relaunch() // FIXME
     }
 
     @IBAction func selectBackgroundFile(sender: AnyObject) {
@@ -108,6 +107,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             let urlStr = openPanel.URL!.absoluteString
             print("opening: \(urlStr)")
             userDefaults.setObject(urlStr, forKey: defaultBackgroundKey)
+//            setupBackground()
             relaunch() // FIXME
         }
         else if buttonPressed == NSModalResponseCancel {
