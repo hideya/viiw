@@ -119,8 +119,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func showInfoPanel(sender: AnyObject) {
         let xRelativeToScreen = statusItem.button!.window!.convertRectToScreen(statusItem.button!.bounds).origin.x
         let infoWindowWidth = infoPanel.frame.size.width
+        let infoWindowHeight = infoPanel.frame.size.height
         let mainScreenHeight = NSScreen.mainScreen()!.visibleFrame.size.height
-        infoPanel.setFrameOrigin(CGPoint(x: xRelativeToScreen - infoWindowWidth - 10, y: mainScreenHeight))
+        infoPanel.setFrameOrigin(CGPoint(x: xRelativeToScreen - infoWindowWidth - 20, y: mainScreenHeight - infoWindowHeight - 20))
 
         NSApp.activateIgnoringOtherApps(true)
         infoPanel.makeKeyAndOrderFront(self)
